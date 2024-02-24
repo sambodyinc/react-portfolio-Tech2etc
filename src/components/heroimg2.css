@@ -25,7 +25,7 @@
 
 .hero-img .content {
     position: absolute;
-    transform: translate(-50%, -150%);
+    transform: translate(-50%, -200%);
     top: 50%;
     left: 50%;
     text-align: center;
@@ -42,6 +42,10 @@
 }
 
 @media screen and (max-width: 640px) {
+    .hero-img .content {
+        transform: translate(-50%, -150%);
+    }
+
     .hero .content h1 {
         font-size: 2rem;
     }
