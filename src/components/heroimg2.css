@@ -25,7 +25,7 @@
 
 .hero-img .content {
     position: absolute;
-    transform: translate(-50%, -200%);
+    transform: translate(-50%, -150%);
     top: 50%;
     left: 50%;
     text-align: center;
