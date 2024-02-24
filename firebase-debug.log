@@ -1,0 +1,25 @@
+[debug] [2024-02-24T14:32:40.515Z] ----------------------------------------------------------------------
+[debug] [2024-02-24T14:32:40.524Z] Command:       C:\Program Files (x86)\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-02-24T14:32:40.525Z] CLI Version:   13.3.1
+[debug] [2024-02-24T14:32:40.525Z] Platform:      win32
+[debug] [2024-02-24T14:32:40.526Z] Node Version:  v20.11.1
+[debug] [2024-02-24T14:32:40.527Z] Time:          Sat Feb 24 2024 17:32:40 GMT+0300 (East Africa Time)
+[debug] [2024-02-24T14:32:40.527Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-24T14:32:41.006Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-24T14:32:41.008Z] > authorizing via signed-in user (samuelomondi3@gmail.com)
+[debug] [2024-02-24T14:32:41.009Z] [iam] checking project react-s4m for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-02-24T14:32:41.020Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-s4m:testIamPermissions [none]
+[debug] [2024-02-24T14:32:41.021Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-s4m:testIamPermissions x-goog-quota-user=projects/react-s4m
+[debug] [2024-02-24T14:32:41.022Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-s4m:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-02-24T14:32:51.300Z] *** [apiv2] error from fetch(https://cloudresourcemanager.googleapis.com/v1/projects/react-s4m:testIamPermissions, {"headers":{},"method":"POST","body":"{\"permissions\":[\"firebase.projects.get\",\"firebasehosting.sites.update\"]}"}): FetchError: request to https://cloudresourcemanager.googleapis.com/v1/projects/react-s4m:testIamPermissions failed, reason: getaddrinfo EAI_AGAIN cloudresourcemanager.googleapis.com
+[debug] [2024-02-24T14:32:51.303Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/react-s4m:testIamPermissions
+[debug] [2024-02-24T14:32:51.307Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/react-s4m [none]
+[debug] [2024-02-24T14:33:01.327Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/react-s4m, {"headers":{},"method":"GET","signal":{}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects/react-s4m failed, reason: getaddrinfo EAI_AGAIN firebase.googleapis.com
+[debug] [2024-02-24T14:33:01.328Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/react-s4m (original: request to https://firebase.googleapis.com/v1beta1/projects/react-s4m failed, reason: getaddrinfo EAI_AGAIN firebase.googleapis.com)
+[debug] [2024-02-24T14:33:06.386Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:258:49)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[error] 
+[error] Error: An unexpected error has occurred.
