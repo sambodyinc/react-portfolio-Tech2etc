@@ -7,7 +7,7 @@ class Heroimg2 extends Component {
     return (
       <div className="hero-img">
         <div className="mask-img">
-            <img className="into-img" src={this.props.image} alt="Dynamic"/>
+            <img className="into-img" src={this.props.bg-image} alt="Dynamic"/>
         </div>
 
         <div className="content">
